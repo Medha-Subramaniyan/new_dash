@@ -7,7 +7,7 @@ from sqlalchemy.exc import OperationalError
 from streamlit_autorefresh import st_autorefresh
 
 # ── DB connection string ─────────────────────────────────
-DATABASE_URL = "postgresql://postgres:password@localhost:5432/dash3"
+DATABASE_URL = "postgresql://use:xkv2T6Wnqv5mYLbvCVFIiV02HwU15rnF@dpg-d114ko24d50c73a09o3g-a.oregon-postgres.render.com/dash3"
 
 if not DATABASE_URL:
     st.error(
