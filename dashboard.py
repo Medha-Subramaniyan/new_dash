@@ -5,8 +5,7 @@ import plotly.express as px
 import time
 
 # === DATABASE CONNECTION ===
-DATABASE_URL = 'postgresql://postgres:password@localhost:5432/dash3'
-engine = create_engine(DATABASE_URL)
+engine = create_engine('postgresql://postgres:password@localhost:5432/dash3')
 
 # === PAGE SETUP ===
 st.set_page_config(page_title="NBA Finals Dashboard", layout="wide")
@@ -14,7 +13,7 @@ st.title("🏀 NBA Finals 2025 – Live Game 1 Dashboard")
 
 # === MANUAL REFRESH BUTTON ===
 if st.button("🔁 Manual Refresh"):
-    st.experimental_rerun()
+    st.rerun()
 
 # === PLAYER STATS ===
 try:
