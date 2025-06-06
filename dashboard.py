@@ -5,7 +5,7 @@ import plotly.express as px
 import time
 
 # === DATABASE CONNECTION ===
-DATABASE_URL = 'postgresql://postgres:password@localhost:5432/dash'
+DATABASE_URL = 'postgresql://postgres:password@localhost:5432/dash3'
 engine = create_engine(DATABASE_URL)
 
 # === PAGE SETUP ===
